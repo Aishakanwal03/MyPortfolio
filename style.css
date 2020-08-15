@@ -1,0 +1,86 @@
+body{
+    font-family: serif !important; 
+    background-color: whitesmoke !important;
+}
+
+#main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #74fa89;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: serif;
+}
+.welcome {
+    font-family: serif;
+    font-size: 20px;
+    margin: auto 30px ;
+    text-align: justify;
+}
+
+
+.field {
+    font-family: serif;
+    font-size: 20px;
+    margin: 20px 30px ;
+    text-align: justify;
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    background-color: whitesmoke; 
+}
+
+.skill div{
+    /* color: aliceblue; */
+    width: 300px;
+    height: 200px;
+    margin: 20px 20px;
+    padding-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px green;
+    background-color: white;
+    /* border: 1px solid red; */
+    /* padding: 90px; */
+}
+
+@media (max-width: 770px) {
+    .skill div{
+        /* color: aliceblue; */
+        width: 110px;
+        height: 200px;
+        margin: 20px 20px;
+        padding-top: 20px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 2px 2px 8px green;
+        background-color: white;
+        /* border: 1px solid red; */
+        /* padding: 90px; */
+    }
+}
+
+@media (max-width: 400px) {
+    .skill div{
+        /* color: aliceblue; */
+        width: 110px;
+        height: 200px;
+        margin: 20px 10px;
+        padding-top: 20px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 2px 2px 8px green;
+        background-color: white;
+        /* border: 1px solid red; */
+        /* padding: 90px; */
+    }
+}
+
+
+
+
+
