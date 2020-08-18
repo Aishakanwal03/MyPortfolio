@@ -1,0 +1,195 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: serif !important; 
+    background-color: #f5f5f5 !important;
+    /* scroll-behavior: smooth; */
+}
+
+#main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #74fa89;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: serif;
+    user-select: none;
+    /* margin-top: 40px; */
+}
+.welcome {
+    font-family: serif;
+    font-size: 20px;
+    margin: auto 30px ;
+    text-align: justify;
+    
+}
+
+
+
+.field {
+    line-height: 30px;
+}
+
+.field h1 {
+    color: rgb(3, 87, 3);
+    font-size: 35px;
+    font-weight: bold;
+    
+}
+
+.field .p {
+    height: 2px;
+    width: 120px;
+    background-color: blue;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.favicon-line {
+    height: 2px;
+    width: 70px;
+    margin: 24px 10px;
+    /* line-height: 50px; */
+    background-color: black;
+}
+
+.favi-div {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    user-select: none;
+
+}
+
+.skill , .work {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    background-color: whitesmoke; 
+}
+
+.skill div , .work div{
+    /* color: aliceblue; */
+    width: 300px;
+    height: 200px;
+    margin: 20px 20px;
+    padding-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px green;
+    background-color: white;
+    /* border: 1px solid red; */
+    /* padding: 90px; */
+}
+
+@media (max-width: 770px) {
+    .skill div{
+        /* color: aliceblue; */
+        width: 130px;
+        height: 200px;
+        margin: 20px 20px;
+        padding-top: 20px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 2px 2px 8px green;
+        background-color: white;
+        /* border: 1px solid red; */
+        /* padding: 90px; */
+
+    }
+    .hide {
+        /* margin-top: -100px; */
+        display: none !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .skill div{
+        /* color: aliceblue; */
+        width: 120px;
+        height: 200px;
+        margin: 20px 10px;
+        padding-top: 20px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 2px 2px 8px green;
+        background-color: white;
+        /* border: 1px solid red; */
+        /* padding: 90px; */
+    }
+}
+
+.work button{
+    width: 100px;
+    outline: none;
+    border: 1px solid green;
+    background-color: green;
+    border-radius: 5px;
+    margin-top: 10px;
+
+}
+
+.work a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.work a:hover {
+    text-decoration: none;
+    /* background-color: green; */
+    color: white;
+
+}
+
+
+
+
+.fa {
+    padding: 10px;
+    font-size: 30px !important;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration-line: none; 
+    background-color:#005dab;
+    color: white;
+    margin: 20px 5px;
+    border-radius: 50%;
+}  
+
+.fa-whatsapp {
+    background-color: #09b122;
+    border-radius: 50%;
+    
+}
+
+.fa:hover {
+    color: white;
+    /* background-color: rgb(95, 95, 255); */
+    opacity: 0.8;
+    text-decoration:none;
+    transition: 1s;
+    /* border-radius: 5px; */
+}
+h4 {
+    font-weight: bold;
+    text-shadow: 2px 2px 5px ;
+    
+}
+
+.links .fa {
+    background-color: rgb(51, 50, 50);
+    
+}
+
+
+.sticky {
+    position: sticky !important;
+    top: 0;
+    /* width: 100%; */
+    /* border: 1px solid rgb(241, 236, 236); */
+}
