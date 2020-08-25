@@ -1,5 +1,8 @@
 window.onscroll = function() {
     myFunction()
+    closeNav()
+    
+    
 };
 
 
@@ -13,9 +16,22 @@ var sticky = navbar.offsetTop;
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
+    
   } else {
     navbar.classList.remove("sticky");
+    
   }
 }
 
+function openNav() {
+  document.getElementById("mySidenav").style.marginLeft = "0px"
+  document.getElementById("opac").style.opacity = "0.5"
+  document.getElementById("opac").style.transition = "0.5s"
 
+
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.marginLeft = "-250px"
+  document.getElementById("opac").style.opacity = "1"
+}

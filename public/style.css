@@ -4,8 +4,8 @@ html {
 body{
     font-family: serif !important; 
     background-color: #f5f5f5 !important;
-    /* scroll-behavior: smooth; */
 }
+
 
 #main {
     padding: 20px;
@@ -13,16 +13,13 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     background-color: #74fa89;
-    /* font-family: 'Poppins', sans-serif; */
     font-family: serif;
     user-select: none;
-    /* margin-top: 40px; */
 }
 .welcome {
     font-family: serif;
     font-size: 20px;
     margin: auto 30px ;
-    text-align: justify;
     
 }
 
@@ -51,7 +48,6 @@ body{
     height: 2px;
     width: 70px;
     margin: 24px 10px;
-    /* line-height: 50px; */
     background-color: black;
 }
 
@@ -70,8 +66,8 @@ body{
     background-color: whitesmoke; 
 }
 
-.skill div , .work div{
-    /* color: aliceblue; */
+
+.skill div {
     width: 300px;
     height: 200px;
     margin: 20px 20px;
@@ -80,13 +76,60 @@ body{
     border-radius: 10px;
     box-shadow: 2px 2px 8px green;
     background-color: white;
-    /* border: 1px solid red; */
-    /* padding: 90px; */
+    
+}
+
+.work-1 {
+    display: flex;
+    justify-content:space-between;
+    width: 400px;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    margin: 20px 30px;
+
+}
+.work-1 div {
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.cont{
+    text-align: center !important;
+    margin: auto;
+    width: 200px;
+}
+
+.work-1 button{
+  width: 100px;
+  outline: none;
+  border: 1px solid green;
+  background-color: green;
+  border-radius: 5px;
+
+}
+
+.work-1 a {
+  font-size: 20px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  
+}
+.work-1 button:hover{
+  background-color: white;
+  color: green;
+  opacity: 0.8;
+}
+.work-1 a:hover {
+  text-decoration: none;
+  color: green;
+
 }
 
 @media (max-width: 770px) {
+    
     .skill div{
-        /* color: aliceblue; */
         width: 130px;
         height: 200px;
         margin: 20px 20px;
@@ -95,19 +138,14 @@ body{
         border-radius: 10px;
         box-shadow: 2px 2px 8px green;
         background-color: white;
-        /* border: 1px solid red; */
-        /* padding: 90px; */
 
     }
-    .hide {
-        /* margin-top: -100px; */
-        display: none !important;
-    }
+    
 }
 
 @media (max-width: 400px) {
+
     .skill div{
-        /* color: aliceblue; */
         width: 120px;
         height: 200px;
         margin: 20px 10px;
@@ -116,35 +154,19 @@ body{
         border-radius: 10px;
         box-shadow: 2px 2px 8px green;
         background-color: white;
-        /* border: 1px solid red; */
-        /* padding: 90px; */
+    }
+    .work-1{
+        width: 300px;
+        margin: 20px 10px;
+    }
+    .work-1 img{
+        width: 150px;
+        height: 150px;
+    }
+    .cont{
+        width: 150px;
     }
 }
-
-.work button{
-    width: 100px;
-    outline: none;
-    border: 1px solid green;
-    background-color: green;
-    border-radius: 5px;
-    margin-top: 10px;
-
-}
-
-.work a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    
-}
-
-.work a:hover {
-    text-decoration: none;
-    /* background-color: green; */
-    color: white;
-
-}
-
 
 
 
@@ -169,11 +191,9 @@ body{
 
 .fa:hover {
     color: white;
-    /* background-color: rgb(95, 95, 255); */
     opacity: 0.8;
     text-decoration:none;
     transition: 1s;
-    /* border-radius: 5px; */
 }
 h4 {
     font-weight: bold;
@@ -190,6 +210,59 @@ h4 {
 .sticky {
     position: sticky !important;
     top: 0;
-    /* width: 100%; */
-    /* border: 1px solid rgb(241, 236, 236); */
+    
 }
+
+.sidenav {
+    height: 100%;
+    width : 250px;
+    margin-left: -250px ;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .sidenavtop {
+      padding: 20px;
+      background-color: #74fa89;
+      height: 90px;
+      overflow: hidden;
+  }
+  
+  .sidenav a {
+    padding-top: 10px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+    text-decoration: none;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  #navbar {
+      padding: 10px;
+      font-size:30px;
+      cursor:pointer;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+  
